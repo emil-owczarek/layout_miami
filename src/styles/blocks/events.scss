@@ -36,6 +36,15 @@
   object-fit: cover;
   object-position: 100%;
 
+  @media (min-width: 720px) {
+    width: 100%;
+    object-fit: unset;
+  }
+
+  @media (min-width: 720px) and (max-width: 1020px) {
+    height: 186px;
+  }
+
   &--first {
     object-position: 30%;
   }

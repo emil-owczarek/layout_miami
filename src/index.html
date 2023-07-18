@@ -25,12 +25,13 @@
         </a>
 
         <a class="navigation__burger-menu" href="#menu">
-          <img src="./images/photos/Icon-Burger-menu.svg" alt="burger icon for menu">
+          <img class="navigation__burger-icon" src="./images/photos/Icon-Burger-menu.svg"
+          alt="burger icon for menu">
         </a>
 
 
       </nav>
-      <h1 class="title">
+      <h1 class="title title--primary">
       Welcome
         <br>
       to The MET
@@ -72,10 +73,14 @@
 
 
     <main class="main" id="about-us">
-      <p class="title title__caption">Plan your visit</p>
-      <h2 class="title title--secondary">Museum hours</h2>
+
+
 
       <section class="opening-hours">
+        <div class="title-container">
+          <p class="title title__caption">Plan your visit</p>
+          <h2 class="title title--secondary">Museum hours</h2>
+        </div>
         <article class="opening-hours--Fifth-Avenue">
           <h3 class="opening-hours__title">The Met Fifth Avenue</h3>
           <div class="opening-hours__time">
@@ -180,44 +185,54 @@
       </section>
 
       <h2 class="title title--tertiary" id="contacts">Contact us</h2>
-      <h5 class="contact__title">The Met Fifth Avenue</h5>
+
+
       <section class="contact">
-        <article class="contact contact--Fifth-Avenue">
-          <p class="contact__phone-caption">Phone</p>
-          <p class="contact__phone-number">+1 212-535-7710</p>
-          <p class="contact__adress-caption">Address</p>
-          <p class="contact__adress-street">1000 Fifth Avenue <br> New York, NY 10028</p>
-        </article>
+        <div class="a">
+          <h5 class="contact__title">The Met Fifth Avenue</h5>
+          <article class="contact--Fifth-Avenue">
+            <p class="contact__phone-caption">Phone</p>
+            <p class="contact__phone-number">+1 212-535-7710</p>
+            <p class="contact__adress-caption">Address</p>
+            <p class="contact__adress-street">1000 Fifth Avenue <br> New York, NY 10028</p>
+          </article>
+        </div>
 
-        <h5 class="contact__title">The Met Cloisters</h5>
-        <article class="contact contact--Fifth-Cloisters">
-          <p class="contact__phone-caption">Phone</p>
-          <p class="contact__phone-number">+1 212-923-3700</p>
-          <p class="contact__adress-caption">Address</p>
-          <p class="contact__adress-street">99 Margaret Corbin Drive Fort Tryon Park <br> New York, NY 10040</p>
-        </article>
+        <div class="a">
+          <h5 class="contact__title">The Met Cloisters</h5>
+          <article class=" contact--Fifth-Cloisters">
+            <p class="contact__phone-caption">Phone</p>
+            <p class="contact__phone-number">+1 212-923-3700</p>
+            <p class="contact__adress-caption">Address</p>
+            <p class="contact__adress-street">99 Margaret Corbin Drive Fort Tryon Park <br> New York, NY 10040</p>
+          </article>
+        </div>
 
-        <form class="form">
-          <div class="form__item">
-            <label class="form__label" for="name">Name</label>
-            <input id="name" class="form__input"
-            type="text" placeholder="Name">
-          </div>
+        <div>
+          <form class="form">
+            <div class="form__item">
+              <label class="form__label" for="name">Name</label>
+              <input id="name" class="form__input"
+              type="text" placeholder="Name">
+            </div>
 
-          <div class="form__item">
-            <label class="form__label" for="email">Email</label>
-            <input id="email" class="form__input"
-            type="email" placeholder="Email">
-          </div>
+            <div class="form__item">
+              <label class="form__label" for="email">Email</label>
+              <input id="email" class="form__input"
+              type="email" placeholder="Email">
+            </div>
 
-          <div class="form__item">
-            <label class="form__label" for="message">Message</label>
-            <textarea id="message" class="form__textarea"
-            placeholder="Message"></textarea>
-          </div>
+            <div class="form__item">
+              <label class="form__label" for="message">Message</label>
+              <textarea id="message" class="form__textarea"
+              placeholder="Message"></textarea>
+            </div>
 
-          <button class="button">Send</button>
-        </form>
+            <button class="button">Send</button>
+          </form>
+        </div>
+
+
       </section>
     </main>
 

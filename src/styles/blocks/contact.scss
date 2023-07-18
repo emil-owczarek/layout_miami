@@ -1,5 +1,11 @@
 .contact {
 
+  @media (min-width: 720px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+
   &__title {
     color: var(--main-dark, #161616);
     font-family: Cinzel, sans-serif;
