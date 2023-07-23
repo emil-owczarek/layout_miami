@@ -10,7 +10,7 @@
 
 .burger {
   &::before {
-    content: '';
+    content: "";
     background-image: url(/images/photos/Icon-Burger-menu.svg);
     background-size: cover;
     display: inline-block;
@@ -24,7 +24,7 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     background-image: url(/images/photos/Icon-Burger-menu-hover.svg);
     background-size: cover;
     display: none;
