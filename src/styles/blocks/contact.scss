@@ -6,6 +6,10 @@
     grid-template-rows: 1fr;
   }
 
+  &__element {
+    margin-bottom: 30px;
+  }
+
   &__title {
     color: var(--main-dark, #161616);
     font-family: Cinzel, sans-serif;
@@ -36,5 +40,6 @@
     line-height: 140%; /* 22.4px */
     padding-bottom: 8px;
     padding-right: 40px;
+    text-decoration: none;
   }
 }

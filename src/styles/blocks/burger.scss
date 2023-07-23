@@ -1,0 +1,53 @@
+@mixin visually-hidden() {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.burger {
+  &::before {
+    content: '';
+    background-image: url(/images/photos/Icon-Burger-menu.svg);
+    background-size: cover;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+
+    @media (min-width: 720px) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &::after {
+    content: '';
+    background-image: url(/images/photos/Icon-Burger-menu-hover.svg);
+    background-size: cover;
+    display: none;
+    width: 24px;
+    height: 24px;
+
+    @media (min-width: 720px) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: inline-block;
+    }
+  }
+
+  &__label {
+    @include visually-hidden();
+  }
+}
