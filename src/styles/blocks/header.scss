@@ -1,12 +1,16 @@
 .header {
   box-sizing: border-box;
 
-  background-image: url(../images/photos/image-3.jpg);
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url(../images/photos/image-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
   background-color: black;
-  padding: 12rem 1.25rem 18rem;
+  height: 100vh;
   position: relative;
 
   &__logo {
@@ -39,7 +43,7 @@
 
     @media (min-width: 700px) {
       font-size: 60px;
-   }
+    }
 
     @media (min-width: 1020px) {
       font-size: 80px;
